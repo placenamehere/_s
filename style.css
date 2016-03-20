@@ -32,7 +32,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Menus
 # Accessibility
 # Alignments
+# Containers
+  ## Two Up
+  ## Three Up
 # Clearings
+# Site Header
 # Widgets
 # Content
 	## Posts and pages
@@ -48,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: 'Minion Pro', serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -79,6 +83,7 @@ video {
 	display: inline-block;
 	vertical-align: baseline;
 }
+/*
 
 audio:not([controls]) {
 	display: none;
@@ -262,22 +267,23 @@ td,
 th {
 	padding: 0;
 }
-
+*/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+
 body,
 button,
 input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Minion Pro', serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
-
+/*
 h1,
 h2,
 h3,
@@ -342,7 +348,7 @@ ins {
 big {
 	font-size: 125%;
 }
-
+*/
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -419,6 +425,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/*
 button,
 input[type="button"],
 input[type="reset"],
@@ -522,7 +529,7 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
-
+*/
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -726,6 +733,29 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+# Containers
+--------------------------------------------------------------*/
+.flup {
+  display: flex;
+}
+.flup-item {
+  flex: 1;
+}
+/*--------------------------------------------------------------
+## Two Up
+--------------------------------------------------------------*/
+.flup--2 {
+
+}
+
+/*--------------------------------------------------------------
+## Three Up
+--------------------------------------------------------------*/
+.flup--3 {
+
+}
+
+/*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
 .clear:before,
@@ -752,6 +782,25 @@ a:active {
 .site-content:after,
 .site-footer:after {
 	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Site Header
+--------------------------------------------------------------*/
+.site-header {
+
+}
+
+.site-title {
+  font-size: 3em;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 551px) {
+  .site-title {
+    font-size: 5em;
+  }
 }
 
 /*--------------------------------------------------------------
